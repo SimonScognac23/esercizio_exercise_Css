@@ -1,0 +1,96 @@
+h1,
+h2,
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: red
+}
+
+p li,
+nav li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+#articolo {
+    background-color: blue;
+}
+
+
+.index-photo {
+
+    background-image: url('https://images.hdqwalls.com/download/final-fantasy-xvi-4k-2h-2048x1152.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+
+}
+
+.articolo2 {
+    background-color: green;
+
+
+
+
+}
+
+.articolo2:hover {
+    background-color: whitesmoke;
+}
+
+.aside {
+    width: 40%;
+    padding: 20px;
+    background-color: #fff9c4;
+    height: auto;
+    margin-top: 20px;
+
+}
+
+.article {
+    width: 60%;
+    background-color: #DABAD0;
+    padding: 20px;
+
+}
+
+.Flexbox {
+    display: flex;
+    gap: 30px
+}
+
+.nav-bar {
+
+    display: flex;
+    gap: 40;
+    padding-left: 0;
+    list-style: none;
+
+}
+
+.nav-bar li {
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: gold font-weight: bold;
+    padding: 5px;
+
+}
+
+.nav-bar a:hover {
+    color: black;
+    border-bottom: 2px solid gold;
+}
