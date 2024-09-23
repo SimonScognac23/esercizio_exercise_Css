@@ -4,10 +4,17 @@ h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: red
+    color: red;
 }
 
-p li,
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 nav li {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -20,28 +27,20 @@ a li {
     font-style: normal;
 }
 
-
 #articolo {
     background-color: blue;
 }
 
-
 .index-photo {
-
     background-image: url('https://images.hdqwalls.com/download/final-fantasy-xvi-4k-2h-2048x1152.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 75%;
-
 }
 
 .articolo2 {
     background-color: green;
-
-
-
-
 }
 
 .articolo2:hover {
@@ -49,33 +48,47 @@ a li {
 }
 
 .aside {
-    width: 40%;
+    flex: 1;
     padding: 20px;
     background-color: #fff9c4;
-    height: auto;
     margin-top: 20px;
-
+    margin-left: 20px;
+    max-width: 300px;
+    height: 100%;
+    text-align: center;
 }
 
-.article {
-    width: 60%;
-    background-color: #DABAD0;
-    padding: 20px;
-
-}
 
 .Flexbox {
     display: flex;
-    gap: 30px
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.article {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-bar {
-
+    list-style-type: none;
     display: flex;
-    gap: 40;
-    padding-left: 0;
-    list-style: none;
-
 }
 
 .nav-bar li {
@@ -85,12 +98,80 @@ a li {
 
 .nav-bar a {
     text-decoration: none;
-    color: gold font-weight: bold;
+    color: gold;
+    font-weight: bold;
     padding: 5px;
-
 }
 
 .nav-bar a:hover {
     color: black;
     border-bottom: 2px solid gold;
+}
+
+.icona {
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.barret {
+    display: flex;
+    width: 60%;
+}
+
+.main {
+    display: flex;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+
+    .index-photo {
+        background-size: 100%;
+
+    }
+
+    nav img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        margin: 10px 0;
+    }
+
+    h1,
+    h2 {
+        font-size: 3rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Flexbox {
+        flex-direction: column;
+
+    }
+
+
+
+
+
 }
