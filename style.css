@@ -73,6 +73,13 @@ a li {
     text-align: center;
 }
 
+
+.aulab {
+    width: 100px;
+    height: 100px;
+}
+
+
 .img {
     width: 100%;
     height: 200px;
@@ -108,12 +115,11 @@ nav {
     border-bottom: 2px solid gold;
 }
 
-.icona {
-    position: sticky;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
+body {
+    margin: 0%;
 }
+
+
 
 .barret {
     display: flex;
@@ -130,48 +136,142 @@ nav {
     justify-content: center;
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 0 10px;
-        font-size: 16px;
+footer {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+    margin-top: 50;
+
+    position: relative;
+    height: 200px;
+    background-color: #333;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.disco {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+
+footer:hover .disco {
+    top: calc(100% - 50px);
+
+    transform: translate(-50%, -50%) rotate(360deg);
+
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        transform: translateX(-50%) rotate(0deg);
     }
 
-    .index-photo {
-        background-size: 100%;
-
+    50% {
+        top: calc(100% - 50px);
+        transform: translateX(-50%) rotate(180deg);
     }
 
-    nav img {
-        width: 100%;
-        height: auto;
+    100% {
+        top: 0;
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+
+
+.icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+
+@keyframes Movie {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+
+    nav {
+        flex-direction: column;
+
+        justify-content: center;
     }
 
     .nav-bar {
         flex-direction: column;
         align-items: center;
+
     }
 
     .nav-bar li {
         margin: 10px 0;
+
+        padding: 10px 0;
     }
 
-    h1,
-    h2 {
-        font-size: 3rem;
+    .nav-bar a {
+        font-size: 10px;
+
+        padding: 10px 5px;
+
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+
+    .aulab {
+        width: 50px;
+        height: 50px;
     }
 
     .Flexbox {
-        flex-direction: column;
-
+        display: block;
+        width: 100%;
     }
 
+    .aside {
+        display: block;
+        width: 100%;
+    }
 
+    .main {
+        display: block;
+    }
 
+    footer {
+        display: block;
+    }
 
+    .icon {
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
+
+        z-index: 1000;
+        width: 50px;
+        height: 50px;
+    }
 
 }
