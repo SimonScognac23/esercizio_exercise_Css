@@ -1,3 +1,9 @@
+/* Reset e stili di base */
+body {
+    margin: 0;
+}
+
+/* Tipografia */
 h1,
 h2,
 h3 {
@@ -7,84 +13,17 @@ h3 {
     color: red;
 }
 
+/* Layout principale */
 header {
+    background-image: url('https://images.hdqwalls.com/download/final-fantasy-xvi-4k-2h-2048x1152.jpg');
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-
-nav li {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-a li {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-#articolo {
-    background-color: blue;
-}
-
-.index-photo {
-    background-image: url('https://images.hdqwalls.com/download/final-fantasy-xvi-4k-2h-2048x1152.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 75%;
-}
-
-.articolo2 {
-    background-color: green;
-}
-
-.articolo2:hover {
-    background-color: whitesmoke;
-}
-
-.aside {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff9c4;
-    margin-top: 20px;
-    margin-left: 20px;
-    max-width: 300px;
-    height: 100%;
-    text-align: center;
-}
-
-
-.Flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 20px;
-}
-
-.article {
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-}
-
-
-.aulab {
-    width: 100px;
-    height: 100px;
-}
-
-
-.img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    height: 80vh;
 }
 
 nav {
@@ -93,185 +32,57 @@ nav {
     align-items: center;
 }
 
-.nav-bar {
-    list-style-type: none;
+main {
     display: flex;
+    background-color: bisque;
 }
 
-.nav-bar li {
-    margin: 20px;
-    padding: 20px;
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFEE75;
+    /* Codice esadecimale per giallo chiaro intermedio */
 }
 
-.nav-bar a {
+/* Componenti specifici */
+.list-link {
+    display: flex;
+    list-style-type: none;
+}
+
+.link {
+    margin-right: 10px;
     text-decoration: none;
-    color: gold;
-    font-weight: bold;
-    padding: 5px;
 }
 
-.nav-bar a:hover {
-    color: black;
+.link:hover {
     border-bottom: 2px solid gold;
 }
 
-body {
-    margin: 0%;
+.aulab {
+    width: 100px;
+    height: 100px;
 }
 
-
-
-.barret {
+.containerArticle {
     display: flex;
     width: 60%;
 }
 
-.main {
-    display: flex;
+.titleArticle {
+    text-align: center;
 }
 
-.aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.btnArticle {
+    color: white;
 }
 
-footer {
-    background-color: aqua;
-    display: flex;
-    justify-content: space-around;
-    height: 80vh;
-    margin-top: 50;
-
-    position: relative;
-    height: 200px;
-    background-color: #333;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
+.btnArticle:hover {
+    color: black;
 }
 
-.disco {
-    width: 50px;
-    height: 50px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: transform 0.5s ease-in-out, top 0.5s ease-in-out;
-}
-
-footer:hover .disco {
-    top: calc(100% - 50px);
-
-    transform: translate(-50%, -50%) rotate(360deg);
-
-}
-
-@keyframes bounce {
-    0% {
-        top: 0;
-        transform: translateX(-50%) rotate(0deg);
-    }
-
-    50% {
-        top: calc(100% - 50px);
-        transform: translateX(-50%) rotate(180deg);
-    }
-
-    100% {
-        top: 0;
-        transform: translateX(-50%) rotate(360deg);
-    }
-}
-
-
-
-.icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-
-@keyframes Movie {
-    0% {
-        transform: translateY(100px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-
-}
-
-@media screen and (max-width: 670px) {
-
-    nav {
-        flex-direction: column;
-
-        justify-content: center;
-    }
-
-    .nav-bar {
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .nav-bar li {
-        margin: 10px 0;
-
-        padding: 10px 0;
-    }
-
-    .nav-bar a {
-        font-size: 10px;
-
-        padding: 10px 5px;
-
-    }
-
-
-    .aulab {
-        width: 50px;
-        height: 50px;
-    }
-
-    .Flexbox {
-        display: block;
-        width: 100%;
-    }
-
-    .aside {
-        display: block;
-        width: 100%;
-    }
-
-    .main {
-        display: block;
-    }
-
-    footer {
-        display: block;
-    }
-
-    .icon {
-        position: fixed;
-        bottom: 20px;
-        right: 40px;
-
-        z-index: 1000;
-        width: 50px;
-        height: 50px;
-    }
+.imgArticle {
+    width: 200px;
 
 }

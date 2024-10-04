@@ -6,133 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Foglio di stile personalizzato -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- Font Montserrat e Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
-
-
 </head>
 
 <body class="index-photo">
-
-
-
-
-
-
-
-
-
-
-
-    <nav id="navbar">
-
-
+    <!-- Barra di navigazione -->
+    <nav>
         <img class="aulab" src="https://aulab.it/wp-content/uploads/2023/04/aulab-logo.svg" alt="Logo del sito Aulab"
             data-cmp-ab="2" data-cmp-info="10">
-
-        <ul class="nav-bar">
-
-
-
-
-            <li><a href="https://cdn.pixabay.com/photo/2024/03/13/08/17/ai-generated-8630459_1280.jpg">Corso
-                    gratuito</a></li>
-            <li><a href="https://cdn.pixabay.com/photo/2023/02/05/01/10/robot-7768527_960_720.jpg">Corsi</a></li>
-            <li><a href="https://cdn.pixabay.com/photo/2023/02/05/01/09/artificial-intelligence-7768524_960_720.jpg">Perchè
-                    Aulab</a></li>
-            <li><a
-                    href="https://cdn.pixabay.com/photo/2023/02/05/01/09/artificial-intelligence-7768524_960_720.jpg">Guide</a>
-            </li>
-            <li><a
-                    href="https://cdn.pixabay.com/photo/2023/02/05/01/09/artificial-intelligence-7768524_960_720.jpg">Blog</a>
-            </li>
-            <li><a href="https://cdn.pixabay.com/photo/2023/02/05/01/09/artificial-intelligence-7768524_960_720.jpg">Lavora
-                    con noi</a></li>
-            <li><a href="https://cdn.pixabay.com/photo/2023/02/05/01/09/artificial-intelligence-7768524_960_720.jpg">Sei
-                    un azienda?</a></li>
-
+        <ul class="list-link">
+            <li><a class="link" href="">Blog</a></li>
+            <li><a class="link" href="">Guide</a></li>
+            <li><a class="link" href="">Corsi</a></li>
+            <li><a class="link" href="">Chi siamo</a></li>
         </ul>
     </nav>
 
-    <main class="main">
-        <header class="barret">
-            <h1>Blog</h1>
-            <h2>Articoli in evidenza</h2>
+    <!-- Header con titolo principale -->
+    <header>
+        <h1>Blog</h1>
+        <a href="">Home >></a>
+    </header>
 
-            <div class="Flexbox">
-                <article class="article">
-                    <img class="img" src="https://cdn.pixabay.com/photo/2024/04/12/23/11/nature-8692760_640.jpg"
-                        alt="Descrizione dell'immagine">
-                    <h2>Cos’è il linguaggio HTML e come impararlo</h2>
-                    <a href="articolo.html">Leggi tutto</a>
-                </article>
+    <!-- Sezione titolo degli articoli in evidenza -->
+    <section class="titleArticle">
+        <h2>Articoli in evidenza</h2>
+    </section>
 
-                <article class="article">
-                    <img class="img" src="https://cdn.pixabay.com/photo/2022/03/27/14/32/rotterdam-7095262_640.jpg"
-                        alt="Descrizione dell'immagine">
-                    <h2>Corso Javascript online: cosa c’è da sapere</h2>
-                    <a href="articolo2.html">Leggi tutto</a>
-                </article>
+    <!-- Contenuto principale -->
+    <main>
+        <!-- Sezione degli articoli -->
+        <section class="containerArticle">
+            <!-- Articolo 1 -->
+            <article>
+                <img class="imgArticle"
+                    src="https://th.bing.com/th/id/OIP.9mGVG6Q2rGgsWBzOb3jy3gAAAA?rs=1&pid=ImgDetMain" alt="foto1">
+                <p>4 ottobre 2024</p>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde adipisci, sunt placeat nemo
+                    cupiditate excepturi modi id nobis aut beatae earum deleniti sint rerum voluptate quia ipsum
+                    perferendis et!</p>
+                <button class="btnArticle">Leggi tutto</button>
+            </article>
 
-                <article class="article">
-                    <a href="articolo-suggerito.html">
-                        <img class="img"
-                            src="https://aulab.it/wp-content/uploads/2023/04/FREELANCE-DEVELOPER-LE-OPPORTUNITA-PER-I-LIBERI-PROFESSIONISTI-cover-768x432.jpg"
-                            alt="Immagine articolo suggerito" width="300" height="300">
-                        <h3>Linguaggio Java: i pro e i contro da conoscere prima di impararlo</h3>
-                    </a>
-                    <p>Il linguaggio Java è uno dei pilastri della programmazione informatica moderna</p>
-                </article>
-            </div>
-        </header>
+            <!-- Articolo 2 -->
+            <article>
+                <img class="imgArticle"
+                    src="https://www.manga-news.com/public/images/news/news-metal-gear-solid-2-sons-of-liberty.jpg"
+                    alt="foto2">
+                <p>4 ottobre 2024</p>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde adipisci, sunt placeat nemo
+                    cupiditate excepturi modi id nobis aut beatae earum deleniti sint rerum voluptate quia ipsum
+                    perferendis et!</p>
+                <button class="btnArticle">Leggi tutto</button>
+            </article>
 
+            <!-- Articolo 3 -->
+            <article>
+                <img class="imgArticle"
+                    src="https://th.bing.com/th/id/OIP.5fjrdTP2o9Nd2D6utP_fLAAAAA?rs=1&pid=ImgDetMain" alt="foto3">
 
+                <p>4 ottobre 2024</p>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde adipisci, sunt placeat nemo
+                    cupiditate excepturi modi id nobis aut beatae earum deleniti sint rerum voluptate quia ipsum
+                    perferendis et!</p>
+                <button class="btnArticle">Leggi tutto</button>
+            </article>
+        </section>
 
-        <aside class="aside">
-
-            <h2>Flexbox </h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequuntur laborum cupiditate
-                aliquid
-                eos,
-                aspernatur molestiae debitis cum veritatis quam, rem sapiente impedit mollitia magni fugiat iste
-                molestias,
-                labore animi?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ad similique perspiciatis quidem
-                tempore, assumenda eligendi velit expedita magni! Ipsa quae nisi numquam nulla optio provident
-                cupiditate minus dolores adipisci?</p>
-
-            <img class="img" src="https://logodix.com/logo/1999883.png" alt="basket" class="aside-image">
-
+        <!-- Barra laterale -->
+        <aside>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint labore, illum ad nihil rerum amet
+                praesentium dignissimos iusto nemo hic voluptate quas voluptatum distinctio numquam. Omnis facere fuga
+                deleniti nesciunt.</p>
         </aside>
-
     </main>
-
-    <footer>
-        <div class="disco"></div>
-        <li>hello</li>
-        <li>hello</li>
-        <li>hello</li>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste molestias eveniet, officia quia
-            delectus distinctio hic nostrum laborum rem quisquam deleniti, soluta impedit, animi velit similique
-            praesentium harum! Aperiam.</p>
-
-        <a href="#navbar"> <img src="https://hackademy.it/storage/qWVDMqzBgLMA5fYE841IBmjHqUVL0AdJ6xzBR76L.png"
-                alt="Immagine icona" class="icon"> </a>
-    </footer>
-
-
 </body>
 
 </html>
