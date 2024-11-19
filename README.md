@@ -7,6 +7,9 @@ Passando alla barra di navigazione, mi sono concentrato sulle voci principali de
 Queste modifiche rendono la pagina più intuitiva e gradevole, sia dal punto di vista visivo che funzionale, assicurando una navigazione chiara e un layout ben organizzato.
 
 
+
+
+
 In this code, I worked on organizing the layout and styling the main navigation bar.
 
 For the layout, I used Flexbox to place the article container alongside a secondary section represented by the <aside> tag. I set the article container to have a width of 60%, leaving ample space for the main content, while the aside was styled with a yellowish background color to visually stand out as a secondary section. This approach ensures a clean and balanced layout.
