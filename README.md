@@ -6,3 +6,12 @@ Passando alla barra di navigazione, mi sono concentrato sulle voci principali de
 
 Queste modifiche rendono la pagina più intuitiva e gradevole, sia dal punto di vista visivo che funzionale, assicurando una navigazione chiara e un layout ben organizzato.
 
+
+In this code, I worked on organizing the layout and styling the main navigation bar.
+
+For the layout, I used Flexbox to place the article container alongside a secondary section represented by the <aside> tag. I set the article container to have a width of 60%, leaving ample space for the main content, while the aside was styled with a yellowish background color to visually stand out as a secondary section. This approach ensures a clean and balanced layout.
+
+Moving to the navigation bar, I focused on the main menu items: CORSI, GUIDE, WEBINAR, BLOG, CHI SIAMO, and SEI UN'AZIENDA?. I chose to use display: flex on the parent element containing the links, aligning them horizontally to improve the menu's appearance and usability. Additionally, I added an interactive effect: when the user hovers over a menu item, it is highlighted with a decorative line underneath, thanks to the :hover pseudo-selector.
+
+These changes make the page more intuitive and visually appealing, ensuring clear navigation and a well-organized layout.
+
