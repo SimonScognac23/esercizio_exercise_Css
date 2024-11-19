@@ -7,8 +7,7 @@ Passando alla barra di navigazione, mi sono concentrato sulle voci principali de
 Queste modifiche rendono la pagina più intuitiva e gradevole, sia dal punto di vista visivo che funzionale, assicurando una navigazione chiara e un layout ben organizzato.
 
 
-
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 In this code, I worked on organizing the layout and styling the main navigation bar.
 
